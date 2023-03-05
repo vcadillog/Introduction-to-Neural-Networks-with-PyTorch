@@ -24,8 +24,8 @@ Gray: Training
 
 Convolutional network:
 
-![plot](./image/CNN_loss.png)
-![plot](./image/CNN_acc.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/CNN_loss.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/CNN_acc.png)
 
 Orange: Validation
 Magenta: Training
@@ -33,8 +33,8 @@ Magenta: Training
 Recurrent network:
 
 Successful forecast feature:
-![plot](./image/RNN_f10.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/RNN_f10.png)
 
 Unsuccessful forecast feature:
-![plot](./image/RNN_f11.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/RNN_f11.png)
  
