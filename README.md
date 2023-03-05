@@ -41,11 +41,6 @@ Unsuccessful forecast feature:
 - Orange: Test
 - Gray: Predicted
 
-- Weather data extracted from: https://github.com/cure-lab/LTSF-Linear
 
-Repository based on: 
-
-[1]https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
-
-[2]https://www.kaggle.com/code/ohguri/wine-classification-pytorch-eng-kor
+[1] Weather data extracted from: https://github.com/cure-lab/LTSF-Linear
  
