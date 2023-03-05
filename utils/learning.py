@@ -12,8 +12,8 @@ class learning_loop():
         self.optimizer = optimizer
         self.criterion = criterion        
         self.mode = mode     
-        self.writer1=SummaryWriter('logs/'+directory,flush_secs=60)
-        self.writer2=SummaryWriter('logs/'+directory,flush_secs=60)   
+        self.writer1=SummaryWriter('logs/'+directory+'/train',flush_secs=60)
+        self.writer2=SummaryWriter('logs/'+directory+'/test',flush_secs=60)   
 
     def train(self):
         for epoch in range(1, self.N_EPOCH+1):
@@ -42,12 +42,12 @@ class learning_loop():
                     if self.mode == 'classification':
                         acc_val = (th.argmax(out_val, dim=1) == y_val_ts).float().mean().item()
                
-            self.writer1.add_scalar('Loss/train', loss.item(), epoch)
-            self.writer2.add_scalar('Loss/test', loss_val.item(), epoch)  
+            self.writer1.add_scalar('Loss', loss.item(), epoch)
+            self.writer2.add_scalar('Loss', loss_val.item(), epoch)  
                        
             if self.mode == 'classification':
-                self.writer1.add_scalar('Accuracy/train', acc*100 , epoch)
-                self.writer2.add_scalar('Accuracy/test', acc_val*100, epoch)                           
+                self.writer1.add_scalar('Accuracy', acc*100 , epoch)
+                self.writer2.add_scalar('Accuracy', acc_val*100, epoch)                           
 
             if epoch % 20 == 0:
                     if self.mode == 'classification':
@@ -57,7 +57,8 @@ class learning_loop():
                         print('Epoch : {:3d} / {}, Loss : {:.4f},  Val Loss : {:.4f}'.format(
                             epoch, self.N_EPOCH, loss.item(), loss_val.item()))
                 
-        self.writer.close()        
+        self.writer1.close()        
+        self.writer2.close()        
 
     def test(self):
         acc_avg = 0
