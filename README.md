@@ -16,8 +16,8 @@ The log data can be visualized in a Tensorboard.
 
 Fully connected network:
 
-![Alt text](Introduction-to-Neural-Networks-with-PyTorch/images/DNN_loss.png)
-![plot](./image/DNN_acc.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/DNN_loss.png)
+![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/DNN_acc.png)
 
 Cian: Validation 
 Gray: Training 
