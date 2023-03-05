@@ -1,4 +1,5 @@
 import torch as th
+from torch.utils.tensorboard import SummaryWriter
 
 class learning_loop():
     def __init__(self, N_EPOCH,model,device,train_data,val_data,test_data,optimizer,criterion, directory,mode ) -> None:
