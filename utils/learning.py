@@ -81,7 +81,7 @@ class learning_loop():
             if self.mode == 'classification':
                 acc_avg += acc_test            
             else:
-                y_list.append([i,y_test_ts.numpy(),out_test.numpy()])
+                y_list.append([i,y_test_ts.cpu().numpy(),out_test.cpu().numpy()])                
                 
             loss_avg += loss_test
         if self.mode == 'classification':
