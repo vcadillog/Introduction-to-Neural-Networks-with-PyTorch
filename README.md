@@ -46,5 +46,6 @@ Unsuccessful forecast feature:
 Repository based on: 
 
 [1]https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
+
 [2]https://www.kaggle.com/code/ohguri/wine-classification-pytorch-eng-kor
  
