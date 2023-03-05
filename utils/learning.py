@@ -13,7 +13,7 @@ class learning_loop():
         self.criterion = criterion        
         self.mode = mode     
         self.writer1=SummaryWriter('logs/'+directory+'/train',flush_secs=60)
-        self.writer2=SummaryWriter('logs/'+directory+'/test',flush_secs=60)   
+        self.writer2=SummaryWriter('logs/'+directory+'/val',flush_secs=60)   
 
     def train(self):
         for epoch in range(1, self.N_EPOCH+1):
