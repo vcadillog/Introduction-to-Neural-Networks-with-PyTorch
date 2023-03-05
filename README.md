@@ -19,16 +19,16 @@ Fully connected network:
 ![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/DNN_loss.png)
 ![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/DNN_acc.png)
 
-Cian: Validation 
-Gray: Training 
+- Cian: Validation 
+- Gray: Training 
 
 Convolutional network:
 
 ![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/CNN_loss.png)
 ![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/CNN_acc.png)
 
-Orange: Validation
-Magenta: Training
+- Orange: Validation
+- Magenta: Training
 
 Recurrent network:
 
@@ -37,4 +37,8 @@ Successful forecast feature:
 
 Unsuccessful forecast feature:
 ![Alt text](https://github.com/vcadillog/Introduction-to-Neural-Networks-with-PyTorch/blob/main/images/RNN_f11.png)
+
+- Orange: Test
+- Gray: Predicted
+
  
